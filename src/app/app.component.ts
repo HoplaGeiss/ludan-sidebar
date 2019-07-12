@@ -4,7 +4,41 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   styleUrls: ['./app.component.scss'],
   template: `
-    <ngx-ludan-sidebar></ngx-ludan-sidebar>
+    <img
+      class="menu"
+      src="assets/icons/burger.svg"
+      alt="Menu"
+      (click)="toggleSidebar()"
+    />
+    <ngx-ludan-sidebar
+      [items]="navbarItems"
+      [selectedItem]="selectedNavbarItem"
+      [sidebarOpen]="sidebarOpen"
+      (selectEvent)="select($event)"
+      (closeEvent)="closeSidebar()"
+    ></ngx-ludan-sidebar>
   `
 })
-export class AppComponent {}
+export class AppComponent {
+  navbarItems = [
+    { label: 'Introduction' },
+    { label: 'Getting Started' },
+    { label: 'Setup' },
+    { label: 'About' }
+  ];
+
+  selectedItem = this.navbarItems[0];
+  sidebarOpen = true;
+
+  select = element => {
+    this.selectedItem = element;
+  }
+
+  toggleSidebar = () => {
+    this.sidebarOpen = !this.sidebarOpen;
+  }
+
+  closeSidebar = () => {
+    this.sidebarOpen = false;
+  }
+}
