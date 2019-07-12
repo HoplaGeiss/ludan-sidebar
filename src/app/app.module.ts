@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgxLudanSidebarModule } from './../../projects/ngx-ludan-sidebar/src/lib/ngx-ludan-sidebar.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
+  imports: [NgxLudanSidebarModule, BrowserAnimationsModule],
   declarations: [AppComponent],
-  imports: [BrowserModule, NgxLudanSidebarModule],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

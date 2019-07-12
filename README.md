@@ -6,7 +6,7 @@ Example of a sidebar using angular animation.
 
 ```
 ng build my-lib
-cd dist/my-lib
+cd dist/ngx-ludan-sidebar
 npm publish
 ```
 

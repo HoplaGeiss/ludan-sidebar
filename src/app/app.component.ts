@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
     />
     <ngx-ludan-sidebar
       [items]="navbarItems"
-      [selectedItem]="selectedNavbarItem"
+      [selectedItem]="selectedItem"
       [sidebarOpen]="sidebarOpen"
       (selectEvent)="select($event)"
       (closeEvent)="closeSidebar()"
