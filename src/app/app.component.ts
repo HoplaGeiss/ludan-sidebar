@@ -28,7 +28,7 @@ export class AppComponent {
   ];
 
   selectedItem = this.navbarItems[0];
-  sidebarOpen = true;
+  sidebarOpen = false;
 
   select = element => {
     this.selectedItem = element;

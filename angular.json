@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hopla-sidebar": {
+    "ludan-sidebar": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hopla-sidebar",
+            "outputPath": "dist/ludan-sidebar",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "hopla-sidebar:build"
+            "browserTarget": "ludan-sidebar:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "hopla-sidebar:build:production"
+              "browserTarget": "ludan-sidebar:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hopla-sidebar:build"
+            "browserTarget": "ludan-sidebar:build"
           }
         },
         "test": {
@@ -110,11 +110,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "hopla-sidebar:serve"
+            "devServerTarget": "ludan-sidebar:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "hopla-sidebar:serve:production"
+              "devServerTarget": "ludan-sidebar:serve:production"
             }
           }
         }
@@ -155,5 +155,5 @@
         }
       }
     }},
-  "defaultProject": "hopla-sidebar"
+  "defaultProject": "ludan-sidebar"
 }
