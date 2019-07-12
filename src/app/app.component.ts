@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  template: `
+    <ngx-ludan-sidebar></ngx-ludan-sidebar>
+  `
 })
-export class AppComponent {
-  title = 'hopla-sidebar';
-}
+export class AppComponent {}

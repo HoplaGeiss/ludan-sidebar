@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-ludan-sidebar": [
+        "dist/ngx-ludan-sidebar"
+      ],
+      "ngx-ludan-sidebar/*": [
+        "dist/ngx-ludan-sidebar/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
