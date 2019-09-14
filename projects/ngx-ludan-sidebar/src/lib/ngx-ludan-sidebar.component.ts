@@ -5,14 +5,7 @@ import {
   transition,
   trigger
 } from '@angular/animations';
-import {
-  Component,
-  ElementRef,
-  EventEmitter,
-  Input,
-  Output,
-  ViewChild
-} from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 export interface NavbarItemInterface {
   label: string;
@@ -68,8 +61,6 @@ export class NgxLudanSidebarComponent {
 
   @Output() selectEvent = new EventEmitter();
   @Output() closeEvent = new EventEmitter();
-
-  @ViewChild('nav', { static: false }) nav: ElementRef;
 
   selectItem = item => {
     this.selectEvent.emit(item);
